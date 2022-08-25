@@ -1,136 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOTD</title>
-    <link rel="shortcut icon" href="assets/images/icon/icon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/styles.css">
-  </head>
-  <body class="light-theme" role="body" aria-label="o site esta utilizando o tema light">
-    <header>
-      <div class="header-content">
-        <img src="assets/images/backgrounds/bg1.jpg">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOTD</title>
 
-        <p class="invert-element" role="text">The story of the House Targaryen set 172 years before the events of game of thrones (2011)</p>
+  <link rel="shortcut icon" href="assets/images/icon/icon.png" type="image/x-icon">
 
-        <button id="switch-theme-button" onclick="switchTheme()">Dark Mode</button>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="light-theme" role="body" aria-label="o site esta utilizando o tema light">
+  <header>
+    <audio id="music">
+      <source src="assets/musics/Game of Thrones - music.mp3">
+    </audio>
+    <div class="header-content">
+      <img src="assets/images/backgrounds/bg1.jpg">
+
+      <p role="text">The story of the House Targaryen set 172 years before the events of game of
+      thrones (2011)</p>
+
+      <button id="switch-theme-button" onclick="switchTheme()">Dracarys</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="section-house-of-the-dragons" class="container">
+      <div class="section-texts">
+        <h2>House of the Dragons</h2>
+        <p role="text">Based on the book Fire & Blood by George R. R. Martin, House of the Dragon is a Game of Thrones
+          spin-off that tells the story of the conquest of lands in Westeros, better known as the Dance of Dragons.</p>
+      </div>
+      <div class="img-section1">
+        <img src="assets/images/banner/img4.jpg" alt="imagem ilustrativa house of the dragons" />
+      </div>
+    </section>
+
+    <section id="section-house-of-the-dragons-trailer" class="container">
+      <div class="video-frame" aria-hidden="true">
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/DotnJ7tTA34" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
 
-      <audio id="music">
-        <source src="">
-      </audio>
+      <div class="section-texts">
+        <h2>House of the dragons trailer</h2>
+        <p role="text">Set over 200 years before the events of the original series, we follow the civil war that unfolds
+          as half-brothers Aegon II (Tom Glynn-Carney) and Rhaenyra (Emma D'Arcy) vie for the throne after the death of
+          their father Viserys I ( Paddy Considine). Rhaenyra is the eldest daughter, however, Aegon is the son of a
+          second marriage, which leads to growing tension between two Targaryen clans over who has the true right to the
+          throne. As described in Game of Thrones, at the time when the Targaryen family ruled the 7 kingdoms, the house
+          was known for its imposing dragons, which, like the family, ended up practically extinct after the internal
+          conflict.</p>
+      </div>
+    </section>
 
-      <div id="top-characters" class="world-characters"></div>
-    </header>
+    <section id="section-house-of-the-dragons-gallery">
+      <div class="container section-text">
+        <h2>Gallery</h2>
+        <ul class="gallery-container" role="gallery">
+          <li class="gallery-image">
+            <img src="assets/images/banner/img1.jpg" alt="">
+          </li>
+          <li class="gallery-image">
+            <img src="assets/images/banner/img2.jpg" alt="">
+          </li>
+          <li class="gallery-image">
+            <img src="assets/images/banner/img3.jpg" alt="">
+          </li>
+          <li class="gallery-image">
+            <img src="assets/images/banner/img5.jpg" alt="">
+          </li>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <main>
-      <section id="section-inverted-world" class="container">
-        <div class="section-texts">
-          <h2>House of the Dragons</h2>
-          <p role="text">Based on the book Fire & Blood by George R. R. Martin, House of the Dragon is a Game of Thrones spin-off that tells the story of the conquest of lands in Westeros, better known as the Dance of Dragons.</p>
-        </div>
-        <div class="img-section1">
-            <img src="assets/images/banner/img4.jpg" alt="imagem ilustrativa house of the dragons"
-            />
-        </div>
-      </section>
-
-      <section id="section-stranger-things-trailer" class="container">
-        <div class="video-frame" aria-hidden="true">
-            <iframe 
-            width="600" 
-            height="400" 
-            src="https://www.youtube.com/embed/DotnJ7tTA34" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-        </div>
-
-        <div class="section-texts">
-          <h2>House of the dragons trailer</h2>
-          <p role="text">Set over 200 years before the events of the original series, we follow the civil war that unfolds as half-brothers Aegon II (Tom Glynn-Carney) and Rhaenyra (Emma D'Arcy) vie for the throne after the death of their father Viserys I ( Paddy Considine). Rhaenyra is the eldest daughter, however, Aegon is the son of a second marriage, which leads to growing tension between two Targaryen clans over who has the true right to the throne. As described in Game of Thrones, at the time when the Targaryen family ruled the 7 kingdoms, the house was known for its imposing dragons, which, like the family, ended up practically extinct after the internal conflict.</p>
-        </div>
-      </section>
-
-      <section id="section-stranger-things-gallery">
-        <div class="container section-text">
-            <h2>Gallery</h2>
-            <ul class="gallery-container" role="gallery">
-                <li class="gallery-image invert-element">
-                    <img src="assets/images/banner/img1.jpg" alt="">
-                </li>
-                <li class="gallery-image invert-element">
-                    <img src="assets/images/banner/img2.jpg" alt="">
-                </li>
-                <li class="gallery-image invert-element">
-                    <img src="assets/images/banner/img3.jpg" alt="">
-                </li>
-                <li class="gallery-image invert-element">
-                    <img src="assets/images/banner/img5.jpg" alt="">
-                </li>
-                </li>
-            </ul>
-        </div>
-      </section>
-
-      <section id="section-form" class="container">            
-        <h2>The Club Dracarys</h2>
+    <section id="section-form" class="container">
+      <h2>The Club Dracarys</h2>
+      
         <p>
-            <strong>A members-only club </strong> <br>
-            Get access to exclusive behind-the-scenes footage from the series.<br>
-            Stay on top of everything that is happening in the world of house of the dragons.<br>
-            Episode discussions.<br>
-            Monthly events with big surprises (possibility of finding actors from the series)<br>
-            And many more benefits<br>
-            EXCLUSIVE FOR GUESTS.
+          The dracarys club is a space reserved for members and their guests,<br> people who share interests about the house of the dragons series<br> and who want to be updated on everything that is happening in the plot.
         </p>
 
-        <div class="form-content">
+      <div class="form-content">
 
         <h3>Join the dracarys club and get <span>outstanding experiences<span></span></h3>
 
-          <div class="form-container">
-            <form>
-              <label for="name">Full Name</label>
-              <input type="text" name="name" id="txtName">
-          
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="txtEmail">
-          
-              <label for="level">Invite</label>
-              <input type="text" name="level" id="txtLevel">
-          
-              <label for="character">Description</label>
-              <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
-            
-              <button type="button" id="btnSubscribe">Join Now</button>
-            </form>
-          </div>
+        <div class="form-container">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="txtName">
 
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="txtEmail">
+
+            <label for="invite">Invite</label>
+            <input type="text" name="invite" id="txtInvite">
+
+            <label for="family">Family</label>
+            <select name="family" id="selectFamily">
+              <option value="0" disabled selected>Choose your family</option>
+              <option value="Arryn">Arryn</option>
+              <option value="Baratheon">Baratheon</option>
+              <option value="Greyjoy">Greyjoy</option>
+              <option value="Lannister">Lannister</option>
+              <option value="Martell">Martell</option>
+              <option value="Stark">Stark</option>
+              <option value="Targaryen">Targaryen</option>
+              <option value="Tully">Tully</option>
+              <option value="Tyrell">Tyrell</option>
+            </select>
+
+            <button type="button" id="btnSubscribe">Join Now</button>
+          </form>
         </div>
-      </section>
-    </main>
 
-    <footer>
-      <p>Developed by José Igor Souza</p>
-      <div class="footer-icons">
-        <a href="https://www.linkedin.com/in/igorolivrs/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-        <a href="https://github.com/igorolivrs" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
       </div>
-      
-    </footer>
+    </section>
+  </main>
 
-    <script>
-        function switchTheme() {
-            document.body.classList.toggle('dark-theme');
-            document.body.classList.toggle('light-theme');
-        }
-    </script>
-  </body>
+  <footer>
+    <p>Developed by José Igor Souza</p>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/igorolivrs/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/igorolivrs" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+    </div>
+
+  </footer>
+
+  <script>
+    function switchTheme() {
+    document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('light-theme');
+
+    const theme = document.body.classList[0];
+    const music = theme === 'dark-theme' ? 'Game of Thrones - music.mp3' : '';
+
+    const audio = document.getElementById('music');
+    audio.src = `assets/musics/${music}`;
+    audio.play();
+    audio.volume = 0.2;
+  }
+  </script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
 </html>
