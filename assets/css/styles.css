@@ -429,3 +429,60 @@ footer::after {
   top: 30px;
   transform: rotateZ(10deg);
 }
+
+/*** Media Querys ***/
+
+@media screen and (max-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-texts p{
+    text-align: justify;
+  }
+
+  .section-texts h2 {
+    text-align: center;
+  }
+
+  .img-section1 {
+    margin-top: 50px;
+  }
+
+  footer::after {
+    background: none;
+  }
+
+  footer::before {
+    background: none;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-content {
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  #section-form .form-content > h3, span {
+    text-align: center;
+  }
+
+  .form-container {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  #section-house-of-the-dragons-trailer {
+    flex-direction: column-reverse;
+  }
+  #section-house-of-the-dragons-trailer .section-texts {
+    margin-bottom: 60px;
+  }
+
+}
